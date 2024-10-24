@@ -40,5 +40,5 @@ jobs:
         file: Dockerfile
         platforms: linux/amd64, linux/arm64
         push: true
-        tags: ghcr.io/abrahamkoloboe27/fruits-recognition-app-streamlit:${{ github.sha }}
+        tags: ghcr.io/abrahamkoloboe27/fruits-recognition-app-streamlit:${{ github.sha }}, ghcr.io/abrahamkoloboe27/fruits-recognition-app-streamlit:latest
 
