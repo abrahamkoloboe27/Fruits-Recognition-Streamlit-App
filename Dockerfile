@@ -16,7 +16,6 @@ RUN pip install  -r requirements.txt
 
 # Copy the rest of the application code
 COPY app.py /app
-COPY models/ /app/models
 
 # Stage 2: Runtime stage
 FROM python:3.10-slim
