@@ -40,5 +40,5 @@ jobs:
         file: Dockerfile
         platforms: linux/amd64, linux/arm64
         push: true
-        tags: ghcr.io/abrahamkoloboe27/file-to-json-projet-streamlit-bash:${{ github.sha }}
+        tags: ghcr.io/abrahamkoloboe27/fruits-recognition-app-streamlit:${{ github.sha }}
 
