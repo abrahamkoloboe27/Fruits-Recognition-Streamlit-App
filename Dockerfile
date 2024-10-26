@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir --upgrade pip
 RUN pip install  -r requirements.txt
 
 # Copy the rest of the application code
-COPY app.py /app
+COPY app.py /app/ 
 
 # Stage 2: Runtime stage
 FROM python:3.10-slim
@@ -31,7 +31,7 @@ WORKDIR /app
 COPY --from=builder /usr/local/lib/python3.10/site-packages /usr/local/lib/python3.10/site-packages
 COPY --from=builder /usr/local/bin /usr/local/bin
 COPY --from=builder /app /app
-
+COPY . /app/
 # Expose the port the app runs on
 EXPOSE 8501
 
