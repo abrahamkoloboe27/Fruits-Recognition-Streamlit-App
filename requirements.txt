@@ -5,3 +5,5 @@ keras
 tensorflow
 plotly
 streamlit
+python-multipart
+pillow
